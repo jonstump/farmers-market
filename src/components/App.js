@@ -6,9 +6,19 @@ import SeasonControl from './SeasonControl';
 function App() {
   return (
     <>
-      <Header />
-      <Market />
-      <SeasonControl />
+      <div class="container">
+        <div class="jumbotron">
+          <Header />
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <Market />
+          </div>
+          <div class="col-6">
+            <SeasonControl />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

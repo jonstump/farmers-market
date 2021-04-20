@@ -299,7 +299,7 @@ class SeasonControl extends React.Component {
     return (
       <React.Fragment>
           <h2>Available in {month.month}</h2>
-          <button onClick={this.handleClick}>Next Season</button>
+          <button class="btn btn-outline-danger" onClick={this.handleClick}>Next Season</button>
           {month.selection.map((produce) =>
             <p>{produce}</p>
           )}

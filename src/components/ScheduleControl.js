@@ -74,16 +74,15 @@ class ScheduleControl extends React.Component {
       <React.Fragment>
         <div class='Schedule'>
           <h2>Schedule</h2>
-          <h3>{today.day}</h3>
-          <h4>{today.location}</h4>
-          <p>{today.hours}</p>
-          <p>{today.booth}</p>
-          <h3>{tomorrow.day}</h3>
-          <h4>{tomorrow.location}</h4>
-          <p>{tomorrow.hours}</p>
-          <p>{tomorrow.booth}</p>
+          <button class="btn btn-outline-danger" onClick={this.handleClick}>Next Day</button>
+          <h3>Where we're at today:</h3>
+          <h4>{today.location}, Booth {today.booth}</h4>
+          <h5>When: {today.day}, {today.hours}</h5>
+          <br/>
+          <h3>Where we're at next:</h3>
+          <h4>{tomorrow.location}, Booth {tomorrow.booth}</h4>
+          <h5>When: {tomorrow.day}, {tomorrow.hours}</h5>
         </div>
-        <button onClick={this.handleClick}>Next Day</button>
       </React.Fragment>
     );
   }
