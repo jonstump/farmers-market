@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const marketSchedule = [
   {
@@ -38,3 +38,15 @@ const marketSchedule = [
     booth: "9G"
   }
 ];
+
+const Schedule = () => {
+  return (
+    <React.Fragment>
+      <div class='Schedule'>
+        <h2>Schedule</h2>
+      </div>
+    </React.Fragment>
+  );
+}
+
+export default Schedule;
