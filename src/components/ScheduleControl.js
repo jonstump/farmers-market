@@ -1,5 +1,5 @@
 import React from 'react';
-import Schedule from './Schedule';
+
 
 class ScheduleControl extends React.Component {
 
@@ -59,7 +59,6 @@ class ScheduleControl extends React.Component {
       return day;
     }
 
-
   handleClick = () => {
     this.setState(prevState => ({
       today: this.dayIncrementer(prevState.today),
@@ -90,4 +89,5 @@ class ScheduleControl extends React.Component {
   }
 
 }
+
 export default ScheduleControl;
