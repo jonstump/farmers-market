@@ -1,9 +1,9 @@
 import React from 'react';
 
 const availableProduce = [  
-  {  
+  {
     month: "January",
-    selection: [  
+    selection: [
       "Apples",
       "Hazelnuts",
       "Pears",
